@@ -2,6 +2,8 @@
 
 **Your sensors know what happened. HLI helps Home Assistant understand what it means.**
 
+This was born out of me deciding to host my HomeAssistant on a reasonable over spec'd hardware, slowly it grew into something I couldn't migrate (due to various non-logical reasons) so started working on making the resources (CPU/memory) a little harder to justify thier existence.
+
 HLI is a local, read-only intelligence layer that discovers your Home Assistant areas and sensor capabilities, then creates explainable occupancy and room-intent entities automatically.
 
 ## What you get
