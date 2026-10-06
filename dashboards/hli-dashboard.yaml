@@ -1,0 +1,26 @@
+title: HLI
+views:
+  - title: HLI
+    path: hli
+    icon: mdi:brain
+    cards:
+      - type: entities
+        title: Human-Like Intelligence
+        entities:
+          - entity: sensor.hli_overview
+          - entity: binary_sensor.hli_house_occupied
+          - entity: sensor.hli_primary_room
+          - entity: sensor.hli_secondary_room
+      - type: markdown
+        title: Room intelligence
+        content: >-
+          {% set rooms = state_attr('sensor.hli_overview', 'rooms') or {} %}
+          {% if rooms %}
+          | Room | Occupancy | Intent | Confidence |
+          |---|---:|---|---:|
+          {% for name, room in rooms.items() | sort %}
+          | {{ name | replace('_',' ') | title }} | {{ room.occupancy }}% | {{ room.intent | replace('_',' ') }} | {{ room.confidence }}% |
+          {% endfor %}
+          {% else %}
+          No rooms discovered yet. Assign devices to Home Assistant Areas, then reload HLI.
+          {% endif %}

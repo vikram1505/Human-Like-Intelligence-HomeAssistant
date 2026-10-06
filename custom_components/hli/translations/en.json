@@ -1,0 +1,28 @@
+{
+  "title": "Human-Like Intelligence",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up HLI",
+        "description": "HLI will inspect Home Assistant's local registries and build a read-only intelligence model. It will not control physical devices."
+      }
+    },
+    "abort": {
+      "already_configured": "HLI is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Discovery settings",
+        "description": "Only high-confidence classifications are automatically attached to rooms.",
+        "data": {
+          "min_confidence": "Minimum discovery confidence"
+        },
+        "data_description": {
+          "min_confidence": "0.80 is recommended. Lower values may include ambiguous entities."
+        }
+      }
+    }
+  }
+}

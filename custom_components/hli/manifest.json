@@ -1,0 +1,14 @@
+{
+  "domain": "hli",
+  "name": "Human-Like Intelligence",
+  "version": "0.1.0",
+  "config_flow": true,
+  "single_config_entry": true,
+  "documentation": "https://github.com/OWNER/home-assistant-hli",
+  "issue_tracker": "https://github.com/OWNER/home-assistant-hli/issues",
+  "codeowners": [],
+  "dependencies": [],
+  "requirements": [],
+  "integration_type": "helper",
+  "iot_class": "calculated"
+}
