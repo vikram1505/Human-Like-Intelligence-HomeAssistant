@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.1
+
+- Rebuilt Python source for readable, lintable public code.
+- Added privacy-preserving diagnostics and stronger repository validation.
+- Added Pylint, Ruff, Hassfest, HACS, and CODEOWNERS CI/governance.
+- Kept the public integration read-only and conservative around actuators.
+
+
 ## 0.1.0
 - Initial public foundation.
 - Automatic Area/Entity/Device discovery.

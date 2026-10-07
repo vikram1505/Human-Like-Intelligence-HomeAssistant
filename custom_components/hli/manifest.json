@@ -1,12 +1,14 @@
 {
   "domain": "hli",
   "name": "Human-Like Intelligence",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "config_flow": true,
   "single_config_entry": true,
-  "documentation": "https://github.com/OWNER/home-assistant-hli",
-  "issue_tracker": "https://github.com/OWNER/home-assistant-hli/issues",
-  "codeowners": [],
+  "documentation": "https://github.com/vikram1505/Human-Like-Intelligence-HomeAssistant",
+  "issue_tracker": "https://github.com/vikram1505/Human-Like-Intelligence-HomeAssistant/issues",
+  "codeowners": [
+    "@vikram1505"
+  ],
   "dependencies": [],
   "requirements": [],
   "integration_type": "helper",
