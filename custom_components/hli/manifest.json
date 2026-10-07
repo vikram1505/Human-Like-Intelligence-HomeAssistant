@@ -1,7 +1,7 @@
 {
   "domain": "hli",
   "name": "Human-Like Intelligence",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "config_flow": true,
   "single_config_entry": true,
   "documentation": "https://github.com/vikram1505/Human-Like-Intelligence-HomeAssistant",

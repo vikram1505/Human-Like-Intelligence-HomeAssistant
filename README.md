@@ -1,5 +1,11 @@
 # HLI — Human-Like Intelligence for Home Assistant
 
+[![Validate](https://github.com/vikram1505/Human-Like-Intelligence-HomeAssistant/actions/workflows/validate.yml/badge.svg)](https://github.com/vikram1505/Human-Like-Intelligence-HomeAssistant/actions/workflows/validate.yml)
+[![Hassfest](https://github.com/vikram1505/Human-Like-Intelligence-HomeAssistant/actions/workflows/hassfest.yml/badge.svg)](https://github.com/vikram1505/Human-Like-Intelligence-HomeAssistant/actions/workflows/hassfest.yml)
+[![HACS](https://github.com/vikram1505/Human-Like-Intelligence-HomeAssistant/actions/workflows/hacs.yml/badge.svg)](https://github.com/vikram1505/Human-Like-Intelligence-HomeAssistant/actions/workflows/hacs.yml)
+
+[![Open your Home Assistant instance and add this repository to HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=vikram1505&repository=Human-Like-Intelligence-HomeAssistant&category=integration)
+
 **Your sensors know what happened. HLI helps Home Assistant understand what it means.**
 
 HLI is a local, read-only intelligence layer that discovers your Home Assistant areas and sensor capabilities, then creates explainable occupancy and room-intent entities automatically.
@@ -17,11 +23,16 @@ HLI is a local, read-only intelligence layer that discovers your Home Assistant 
 ## Install
 
 ### HACS custom repository
-1. Add this GitHub repository to HACS as an **Integration** custom repository.
+
+Click the **Open your Home Assistant instance** button above to open this repository in HACS, then:
+
+1. Confirm the repository is added as an **Integration**.
 2. Install **Human-Like Intelligence**.
 3. Restart Home Assistant.
 4. Go to **Settings → Devices & services → Add integration → Human-Like Intelligence**.
 5. Add the dashboard in `dashboards/hli-dashboard.yaml` if you want the included overview.
+
+Until HLI is accepted into the HACS default repository list, the button adds this GitHub repository as a custom HACS repository.
 
 ### Manual
 Copy `custom_components/hli` to `<config>/custom_components/hli`, restart Home Assistant, then add the integration from the UI.
@@ -38,11 +49,12 @@ Metadata and Home Assistant device classes are preferred over names. Generic swi
 - [How HLI works](docs/how-hli-works.md)
 - [Entities](docs/entities.md)
 - [Troubleshooting](docs/troubleshooting.md)
+- [CI troubleshooting](docs/ci-troubleshooting.md)
 - [Privacy & safety](docs/privacy-and-safety.md)
 
 ## Status
 
-`0.1.0` is the safe foundation release. It intentionally focuses on discovery and room intelligence before optional behaviour/actuation layers are added.
+`0.1.2` is the safe foundation release. It intentionally focuses on discovery and room intelligence before optional behaviour/actuation layers are added.
 
 ## Privacy
 
